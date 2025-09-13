@@ -1,0 +1,85 @@
+package com.servlet_bhavan;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class add_servlet extends HttpServlet
+{
+	
+	
+//	the below method is used when you dont care about the type of request 
+//	like get , post, etc you just want it to execute
+	
+	
+//	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException 
+//	{
+//		int i = Integer.parseInt(req.getParameter("num1"));
+	
+		
+//		int j = Integer.parseInt(req.getParameter("num2"));
+//		
+//		int k = i+j;
+//		
+//		System.out.println("the result is : " + k);
+//		
+//		PrintWriter out = res.getWriter();
+//		
+//		out.println("the result is : " + k);
+//		
+//	}
+	
+//	when you want to chech the type and run that particular method based the 
+//	type of the request we use like below method
+	
+	//this method like dopost and all is given by the httpservlet library
+	
+	//we also have doGet
+	
+	
+
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException 
+	{
+		int i = Integer.parseInt(req.getParameter("num1"));
+		int j = Integer.parseInt(req.getParameter("num2"));
+		
+		int k = i+j;
+		
+//		System.out.println("the result is : " + k);
+//		
+//		PrintWriter out = res.getWriter();
+//		
+//		out.println("the result is : " + k);
+		
+		
+		
+		
+		
+		
+		
+		
+//		the below code is for servlet to servlet communication using requestdispatcher
+		
+		
+//		req.setAttribute("k",k); //session management
+//		
+//		RequestDispatcher rd = req.getRequestDispatcher("sqr");
+//		rd.forward(req, res);
+		
+		
+		
+		
+		
+//		the below code is for sendredirect method for servlet to servlet communication
+		
+		res.sendRedirect("sqr");
+		
+		
+		
+	}
+}

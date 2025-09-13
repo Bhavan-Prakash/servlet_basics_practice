@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+	<form action="input" method = "post">
+		
+		ENTER THE INPUT : <input type = "text" name = "in">
+		
+		<input type = "submit">
+	
+	</form>
+
+</body>
+</html>

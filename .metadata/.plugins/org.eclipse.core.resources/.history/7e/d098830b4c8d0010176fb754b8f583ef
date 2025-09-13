@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<h1>Addition</h1>
+		<form action = "add" method = "get">
+			
+			Enter 1st number: <input type = "text" name = "num1"><br>
+			
+			Enter 2nd number: <input type = "text" name = "num2"><br>
+			
+			<input type = "submit">
+	
+		</form>
+		
+	
+	<h2>Multiplication</h2>
+	
+		<form>
+			
+			Enter first number : <input type = "text" name = "num1"><br>
+			
+			Enter second number : <input type = "text" name = "num2"><br>
+			
+			<input type = "submit">
+			
+		</form>
+	
+
+
+</body>
+</html>

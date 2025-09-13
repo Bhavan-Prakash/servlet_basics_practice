@@ -1,0 +1,30 @@
+package com.simple_calculator;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class mult extends HttpServlet{
+	
+	public void doPost(HttpServletRequest req , HttpServletResponse res) throws IOException {
+		
+		int j = Integer.parseInt(req.getParameter("num1"));
+		int i = Integer.parseInt(req.getParameter("num2"));
+		
+		int r = j+i;
+		
+		PrintWriter out = res.getWriter();
+		
+		out.println("result is : " + j*i );
+		
+	}
+
+}
+
+
+
+
+

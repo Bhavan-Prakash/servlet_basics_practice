@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+
+	<servlet>
+		<servlet-name>check</servlet-name>
+		<servlet-class>com.login_verification.check_servlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>check</servlet-name>
+		<url-pattern>/check</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>sucessful</servlet-name>
+		<servlet-class>com.login_verification.sucessful_servlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>sucessful</servlet-name>
+		<url-pattern>/successful</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>unsucessful</servlet-name>
+		<servlet-class>com.login_verification.unsucessful_servlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>unsucessful</servlet-name>
+		<url-pattern>/unsucessful</url-pattern>
+	</servlet-mapping>
+  
+</web-app>

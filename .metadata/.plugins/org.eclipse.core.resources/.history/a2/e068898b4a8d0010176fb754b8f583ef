@@ -1,0 +1,11 @@
+package simple_calculator;
+
+import jakarta.servlet.http.HttpServlet;
+
+public class add_servlet extends HttpServlet {
+
+		public void service(HttpServlet req , HttpServlet res) {
+			
+			int a = req.getParameter("num1");
+		}
+}

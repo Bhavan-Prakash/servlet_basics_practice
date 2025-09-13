@@ -1,0 +1,58 @@
+package com.servlet_bhavan;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+public class square_servlet extends HttpServlet {
+	
+	public void doGet(HttpServletRequest req , HttpServletResponse res) throws IOException 
+	{
+		
+		
+		
+//      	below code is an example of request dispatcher
+		
+//		int k = (int)req.getAttribute("k"); //type casting it (int) as its a object
+//		
+//		k = k*k;
+//		
+//		PrintWriter out = res.getWriter();
+//		
+//		out.println("result is : " + k);
+		
+		
+		
+		
+//		below code is an example of sendRedirect using url rewritting
+		
+//		int k = Integer.parseInt(req.getParameter("k")); //type casting it (int) as its a object
+//		
+//		k = k*k;
+//		
+//		PrintWriter out = res.getWriter();
+//		
+//		out.println("result is : " + k);
+//		
+//		
+//		
+//		System.out.println("sq called");
+		
+		
+//		below code is an example of sendRedirect using session maintaning
+		
+		HttpSession session = req.getSession();
+		
+		int k = (int)session.getAttribute("k");
+		
+		k = k*k;
+		
+		PrintWriter out = res.getWriter();
+		
+		out.println("the square is : " + k);
+	}
+}
