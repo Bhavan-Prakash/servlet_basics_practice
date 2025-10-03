@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  
+  
+  <servlet>
+  	<servlet-name>initial</servlet-name>
+  	<servlet-class>com.multi_level_form_with_cookies.personal_info</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>initial</servlet-name>
+  	<url-pattern>/personal</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>educational</servlet-name>
+  	<servlet-class>com.multi_level_form_with_cookies.educational_info</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>educational</servlet-name>
+  	<url-pattern>/info</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+   <servlet>
+  	<servlet-name>display</servlet-name>
+  	<servlet-class>com.multi_level_form_with_cookies.display</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>display</servlet-name>
+  	<url-pattern>/disp</url-pattern>
+  </servlet-mapping>
+  
+  
+  </web-app>
