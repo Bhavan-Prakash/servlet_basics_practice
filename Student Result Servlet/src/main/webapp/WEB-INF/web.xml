@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Student Result Servlet</display-name>
+  
+  <servlet>
+  	<servlet-name>info</servlet-name>
+ 	<servlet-class>com.servlets.input_servlet</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>info</servlet-name>
+  	<url-pattern>/input</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>info2</servlet-name>
+ 	<servlet-class>com.servlets.calculator_display_servlet</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>info2</servlet-name>
+  	<url-pattern>/calc</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
