@@ -66,4 +66,4 @@ Features :
 
     The .metadata folder contains IDE/Tomcat-specific configurations and is not part of the application logic.
 
-    The project is meant for learning purposes (Servlets, HTML, XML config).
+    The project is meant for learning purposes (Servlets, HTML, XML config ,Annotation).
